@@ -1,0 +1,14 @@
+diff -uraN configure.ac configure.ac
+--- configure.ac	2016-12-03 16:47:16.600882748 +0300
++++ configure.ac	2016-12-03 17:44:12.918172904 +0300
+@@ -30,10 +30,6 @@
+ 
+ CFLAGS+=" -Os"
+ 
+-AX_CHECK_COMPILE_FLAG([-std=c11], [CFLAGS+=" -std=c11" ],
+-                      [echo "C compiler cannot compile C11 code. Abort"
+-                       exit -1
+-                      ])
+ 
+ 
+ 

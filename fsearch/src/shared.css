@@ -1,0 +1,10 @@
+.fsearch-statusbar-button {
+    border-radius: 0px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.fsearch-results-frame {
+    border-left: none;
+    border-right: none;
+}
