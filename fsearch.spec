@@ -1,6 +1,6 @@
 Name: fsearch
 Version: git.2017.01.02.05.43
-Release: alt1
+Release: alt2
 
 Summary: FSearch is a fast file search utility for GNU/Linux operating systems, inspired by Everything Search Engine. It's written in C and based on GTK+3
 
@@ -38,15 +38,6 @@ Features:
 %patch1 -p0
 
 %build
-
-# put new translation for russian and tell into po/LINGUAS
-pushd po
-# .altnew is created by patch
-mv ru.po.altnew ru.po
-popd
-echo -en "\\nru\\n" >> po/LINGUAS
-
-
 ./autogen.sh
 %configure
 %make_build
@@ -63,6 +54,8 @@ echo -en "\\nru\\n" >> po/LINGUAS
 %_bindir/*
 
 %changelog
+* Mon Jan 02 2017 Sample Maintainer <samplemaintainer@altlinux.org> git.2017.01.02.05.43-alt2
+- rm .po/LINGUAS update from spec
 * Mon Jan 02 2017 Sample Maintainer <samplemaintainer@altlinux.org> git.2017.01.02.05.43-alt1
 - clone upstream git
 * Sat Dec 03 2016 Sample Maintainer <samplemaintainer@altlinux.org> git.2016.12.03.12.55-alt1
