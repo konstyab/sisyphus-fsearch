@@ -1,38 +1,48 @@
+# Tradução para protuguês brasileiro efetuada por Gustavo Henrique Machado da Silva (www.linkedin.com/in/gustavohmsilva)
+# Embora o software original possa não possuir as mesmas licenças, a tradução produzida por mim está protegida sobre o 
+# Creative Commons, Attribution-ShareAlike 4.0 International
+# Contate-me via email no endereço gustavohmsilva@member.fsf.org
+#
+# Translation to brazilian portuguese done by Gustavo Henrique Machado da Silva (www.linkedin.com/in/gustavohmsilva)
+# Even though this software may not share the same licenses, the translation produced by me is protected under
+# Creative commons, Attribution-ShareAlike 4.0 International
+# You can contact me over email on gustavohmsilva@member.fsf.org
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Slovak (FSearch)\n"
+"Project-Id-Version: FSearch 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-23 20:58+0200\n"
-"PO-Revision-Date: 2016-12-23 20:59+0100\n"
-"Last-Translator: \n"
-"Language-Team: Slovak "
-"<https://hosted.weblate.org/projects/fsearch/translations/sk/>\n"
-"Language: sk\n"
+"POT-Creation-Date: 2016-12-22 13:20+0100\n"
+"PO-Revision-Date: 2016-12-22 12:39+0000\n"
+"Last-Translator: Gustavo H M Silva <gustavohmsilva@member.fsf.org>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://hosted.weblate.org/projects/fsearch/translations/pt_BR/>\n"
+"Language: pt-br\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.10\n"
 
 #: ../src/fsearch.glade.h:1
 msgid "Open File(s)"
-msgstr "Otvoriť súbor(y)"
+msgstr "Abrir arquivo(s)"
 
 #: ../src/fsearch.glade.h:2
 msgid "Open With Other Application"
-msgstr "Otvoriť s iným programom"
+msgstr "Abrir com outro aplicativo"
 
 #: ../src/fsearch.glade.h:3
 msgid "Open Containing Folder"
-msgstr "Otvoriť priečinok so súborom"
+msgstr "Abrir Pasta superior"
 
 #: ../src/fsearch.glade.h:4
 msgid "Open File(s) in File Manager"
-msgstr "Otvoriť súbor(y) v správcovi súborov"
+msgstr "Abrir arquivo(s) no Gerenciador de Arquivos"
 
 #: ../src/fsearch.glade.h:5
 msgid "Move to Trash"
-msgstr "Presunúť do koša"
+msgstr "Mover para a Lixeira"
 
 #: ../src/fsearch.glade.h:6
 msgid "FSearch"
@@ -40,107 +50,107 @@ msgstr "FSearch"
 
 #: ../src/fsearch.glade.h:7
 msgid "_File"
-msgstr "_Súbor"
+msgstr "_Arquivo"
 
 #: ../src/fsearch.glade.h:8
 msgid "New Window"
-msgstr "Nové okno"
+msgstr "Nova Janela"
 
 #: ../src/fsearch.glade.h:9
 msgid "Open Folder"
-msgstr "Otvoriť priečinok"
+msgstr "Abrir Pasta"
 
 #: ../src/fsearch.glade.h:10 ../src/popover.ui.h:1
 msgid "Update Database"
-msgstr "Aktualizovať databázu"
+msgstr "Atualizar Base de Dados"
 
 #: ../src/fsearch.glade.h:11
 msgid "_Edit"
-msgstr "_Upraviť"
+msgstr "_Editar"
 
 #: ../src/fsearch.glade.h:12
 msgid "Deselect All"
-msgstr "Zrušiť výber všetkých"
+msgstr "Desmarcar Tudo"
 
 #: ../src/fsearch.glade.h:13
 msgid "Invert Selection"
-msgstr "Obrátiť výber"
+msgstr "Inverter Seleção"
 
 #: ../src/fsearch.glade.h:14
 msgid "_View"
-msgstr "_Zobraziť"
+msgstr "_Ver"
 
 #: ../src/fsearch.glade.h:15
 msgid "Show Menubar"
-msgstr "Zobraziť ponuku"
+msgstr "Mostrar Barra de Menu"
 
 #: ../src/fsearch.glade.h:16
 msgid "Show Statusbar"
-msgstr "Zobraziť stavový riadok"
+msgstr "Mostrar Barra de Estado"
 
 #: ../src/fsearch.glade.h:17
 msgid "Show Filter"
-msgstr "Zobraziť filter"
+msgstr "Mostrar Filtro"
 
 #: ../src/fsearch.glade.h:18
 msgid "Show Search Button"
-msgstr "Zobraziť tlačidlo vyhľadávania"
+msgstr "Mostrar Botão de Pesquisa"
 
 #: ../src/fsearch.glade.h:19
 msgid "_Search"
-msgstr "_Hľadať"
+msgstr "_Pesquisar"
 
 #: ../src/fsearch.glade.h:20
 msgid "Search in Path"
-msgstr "Vyhľadať v umiestnení"
+msgstr "Procurar no Caminho"
 
 #: ../src/fsearch.glade.h:21
 msgid "Match Case"
-msgstr "Rozlišovať veľké a malé písmená"
+msgstr "Coincidir Capitalização"
 
 #: ../src/fsearch.glade.h:22
 msgid "Enable RegEx"
-msgstr "Povoliť regulárne výrazy"
+msgstr "Ativar RegEx"
 
 #: ../src/fsearch.glade.h:23
 msgid "_Help"
-msgstr "_Pomocnik"
+msgstr "_Ajuda"
 
 #: ../src/fsearch.glade.h:24
 msgid "Search..."
-msgstr "Vyhľadať..."
+msgstr "Pesquisar..."
 
 #: ../src/fsearch.glade.h:25
 msgid "Select a Filter"
-msgstr "Vybrať filter"
+msgstr "Selecionar um filtro"
 
 #: ../src/fsearch.glade.h:26
 msgid "All"
-msgstr "Všetky"
+msgstr "Tudo"
 
 #: ../src/fsearch.glade.h:27
 msgid "Folders"
-msgstr "Priečinky"
+msgstr "Pastas"
 
 #: ../src/fsearch.glade.h:28
 msgid "Files"
-msgstr "Súbory"
+msgstr "Arquivos"
 
 #: ../src/fsearch.glade.h:29 ../src/preferences.ui.h:14
 msgid "Search"
-msgstr "Vyhľadávanie"
+msgstr "Pesquisar"
 
 #: ../src/fsearch.glade.h:30
 msgid "Number of Search Results"
-msgstr "Počet výsledkov vyhľadávania"
+msgstr "Número de Resultados da Pesquisa"
 
 #: ../src/fsearch.glade.h:31
 msgid "0 Items"
-msgstr "0 položiek"
+msgstr "0 Itens"
 
 #: ../src/fsearch.glade.h:32
 msgid "Selected Folder and Files"
-msgstr "Vybraté súbory a priečinky"
+msgstr "Pastas e Arquivos Selecionados"
 
 #: ../src/fsearch.glade.h:33
 msgid "0/0"
@@ -148,105 +158,105 @@ msgstr "0/0"
 
 #: ../src/fsearch.glade.h:34 ../src/preferences.ui.h:25
 msgid "Database"
-msgstr "Databáza"
+msgstr "Base de Dados"
 
 #: ../src/fsearch.glade.h:35 ../src/overlay.ui.h:5
 msgid "Updating Database..."
-msgstr "Aktualizácia databázy..."
+msgstr "Atualizando a Base de Dados..."
 
 #: ../src/fsearch.glade.h:36
 msgid "page0"
-msgstr ""
+msgstr "Página 0"
 
 #: ../src/fsearch.glade.h:37
 msgid "(empty)"
-msgstr "(prázdne)"
+msgstr "(vazio)"
 
 #: ../src/fsearch.glade.h:38
 msgid "page1"
-msgstr ""
+msgstr "Página 1"
 
 #: ../src/fsearch.glade.h:39
 msgid "CASE"
-msgstr ""
+msgstr "CASO"
 
 #: ../src/fsearch.glade.h:40
 msgid "PATH"
-msgstr ""
+msgstr "CAMINHO"
 
 #: ../src/fsearch.glade.h:41
 msgid "REGEX"
-msgstr ""
+msgstr "REGEX"
 
 #: ../src/menus.ui.h:1
 msgid "_Open"
-msgstr "_Otvoriť"
+msgstr "_Abrir"
 
 #: ../src/menus.ui.h:2
 msgid "Open _With"
-msgstr "Otvoriť _s"
+msgstr "Abrir _Com"
 
 #: ../src/menus.ui.h:3
 msgid "Other Application"
-msgstr "Iný program"
+msgstr "Outro Aplicativo"
 
 #: ../src/menus.ui.h:4
 msgid "_Open Folder"
-msgstr "_Otvoriť priečinok"
+msgstr "_Abrir Pasta"
 
 #: ../src/menus.ui.h:5
 msgid "C_ut"
-msgstr "_Vystrihnúť"
+msgstr "R_ecortar"
 
 #: ../src/menus.ui.h:6
 msgid "_Copy"
-msgstr "_Kopírovať"
+msgstr "_Copiar"
 
 #: ../src/menus.ui.h:7
 msgid "Move to _Trash"
-msgstr "Presunúť do koša"
+msgstr "Mover para o _Lixo"
 
 #: ../src/menus.ui.h:8
 msgid "_Delete"
-msgstr "_Vymazať"
+msgstr "_Apagar"
 
 #: ../src/menus.ui.h:9 ../src/listview.c:149
 msgid "Name"
-msgstr "Názov"
+msgstr "Nome"
 
 #: ../src/menus.ui.h:10 ../src/listview.c:178
 msgid "Path"
-msgstr "Umiestnenie"
+msgstr "Caminho"
 
 #: ../src/menus.ui.h:11 ../src/listview.c:268
 msgid "Type"
-msgstr "Typ"
+msgstr "Tipo"
 
 #: ../src/menus.ui.h:12 ../src/listview.c:207
 msgid "Size"
-msgstr "Veľkosť"
+msgstr "Tamanho"
 
 #: ../src/menus.ui.h:13 ../src/listview.c:239
 msgid "Date Modified"
-msgstr "Dátum zmeny"
+msgstr "Data de Modificação"
 
 #: ../src/overlay.ui.h:1
 msgid "Empty Database"
-msgstr "Vyprázdniť databázu"
+msgstr "Base de Dados Vazia"
 
 #: ../src/overlay.ui.h:2
 msgid "Go to <b>Edit → Preferences → Database</b> and add some locations"
 msgstr ""
-"Prejdite do <b>Upraviť → Nastavenia → Databáza</b> a pridajte nejaké "
-"umiestnenia"
+"Ir a <b>Editar → Preferências → Base de Dados</b> e adicionar algumas "
+"localizações"
 
 #: ../src/overlay.ui.h:3
 msgid "Empty Query"
-msgstr "Žiadna požiadavka na vyhľadanie"
+msgstr "Consulta em Branco"
 
 #: ../src/overlay.ui.h:4
 msgid "Press <b>Ctrl + F</b> and start typing"
-msgstr "Stlačte <b>Ctrl + F</b> a začnite písať"
+msgstr "Pressione <b>Ctrl + F</b> e comece a escrever"
 
 #: ../src/overlay.ui.h:6
 msgid "..."
@@ -254,144 +264,139 @@ msgstr "..."
 
 #: ../src/overlay.ui.h:7
 msgid "This may take a while."
-msgstr "Môže to chvíľu trvať."
+msgstr "Isto pode demorar um pouco."
 
 #: ../src/overlay.ui.h:8
 msgid "No Results Found"
-msgstr "Nič nenájdené"
+msgstr "Nenhum Resultado Encontrado"
 
 #: ../src/overlay.ui.h:9
 msgid "Try a different search"
-msgstr "Skúste iné vyhľadávanie"
+msgstr "Tentar uma pesquisa diferente"
 
 #: ../src/preferences.ui.h:1
 msgid "Preferences"
-msgstr "Nastavenia"
+msgstr "Preferências"
 
 #: ../src/preferences.ui.h:2
 msgid "Enable dark theme"
-msgstr "Povoliť tmavú tému"
+msgstr "Ativar tema escuro"
 
 #: ../src/preferences.ui.h:3
 msgid "Show tooltips"
-msgstr "Zobraziť tipy"
+msgstr "Mostrar dicas"
 
 #: ../src/preferences.ui.h:4
 msgid "Remember window size"
-msgstr "Zapamätať veľkosť okna"
+msgstr "Lembrar tamanho da janela"
 
 #: ../src/preferences.ui.h:5
 msgid "Remember column configuration"
-msgstr "Zapamätať nastavenie stĺpcov"
+msgstr "Lembrar configuração da coluna"
 
 #: ../src/preferences.ui.h:6
 msgid "Show icons in name column"
-msgstr "Zobraziť ikony v stĺpci s názvami"
+msgstr "Mostrar ícones no nome da coluna"
 
 #: ../src/preferences.ui.h:7
 msgid ""
 "INFO: \"Enable dark theme\" might not have an effect,\n"
 "since not every GTK+ theme provides a dark version."
 msgstr ""
-"Informácia: Nastavenie \"Povoliť tmavú tému\" nemusí mať žiadny vplyv na "
-"program,\n"
-"keďže nie každá GTK+ téma podporuje tmavú verziu."
+"INFO: \"Enable dark theme\" pode não funcionar,\n"
+"since not every GTK+ theme provides a dark version."
 
 #: ../src/preferences.ui.h:9
 msgid "Interface"
-msgstr "Rozhranie"
+msgstr "Interface"
 
 #: ../src/preferences.ui.h:10
 msgid "Limit number of results:"
-msgstr "Limit výsledkov vyhľadávania:"
+msgstr "Limitar número de resultados a:"
 
 #: ../src/preferences.ui.h:11
 msgid "Search in path when query contains path separators"
-msgstr ""
-"Vyhľadávať v umiestnení, ak požiadavka na vyhľadanie obsahuje oddeľovače "
-"ciest"
+msgstr "Procurar no caminho quando a consulta contém separadores de caminho"
 
 #: ../src/preferences.ui.h:12
 msgid "Search as you type"
-msgstr "Vyhľadávať počas písania"
+msgstr "Procurar enquanto escreve"
 
 #: ../src/preferences.ui.h:13
 msgid "Hide results when search is empty"
-msgstr "Skryť výsledky pri prázdnej požiadavke na vyhľadanie"
+msgstr "Esconder resultados quando a pesquisa estiver vazia"
 
 #: ../src/preferences.ui.h:15
 msgid "Update database on start"
-msgstr "Aktualizovať databázu pri spustení"
+msgstr "Atualizar base de dados ao iniciar"
 
 #: ../src/preferences.ui.h:16
 msgid "Add"
-msgstr "Pridať"
+msgstr "Adicionar"
 
 #: ../src/preferences.ui.h:17
 msgid "Remove"
-msgstr "Odstrániť"
+msgstr "Remover"
 
 #: ../src/preferences.ui.h:18
 msgid "Follow symbolic links"
-msgstr "Sledovať symbolické odkazy"
+msgstr "Seguir ligações simbólicas"
 
 #: ../src/preferences.ui.h:19
 msgid "Include"
-msgstr "Zahrnúť"
+msgstr "Incluir"
 
 #: ../src/preferences.ui.h:20
 msgid "Exclude hidden files and folders"
-msgstr "Vylúčiť skryté súbory a priečinky"
+msgstr "Excluir arquivos e pastas escondidas"
 
 #: ../src/preferences.ui.h:21
 msgid "Supports wildcards. Multiple entries must be separated by ';'"
-msgstr "Podporuje zástupné znaky. Ďalšie položky musia byť oddelené ';'"
+msgstr "Suporta coringas. Múltiplas entradas precisam ser separadas por ';'"
 
 #: ../src/preferences.ui.h:22
 msgid "Exclude files:"
-msgstr "Vylúčiť súbory:"
+msgstr "Excluir arquivos:"
 
 #: ../src/preferences.ui.h:23
 msgid "e.g. \".git;*.tmp\""
-msgstr "napríklad: \".git;*.tmp\""
+msgstr "Exemplo. \".git;*.tmp\""
 
 #: ../src/preferences.ui.h:24
 msgid "Exclude"
-msgstr "Vylúčiť"
+msgstr "Excluir"
 
 #: ../src/fsearch_window.c:100 ../src/fsearch_window.c:322
 #: ../src/fsearch_window.c:805
 #, c-format
 msgid "%'d Items"
-msgstr "Počet položiek: %'d"
+msgstr "%'d Itens"
 
 #: ../src/fsearch_window.c:811
 msgid "Last Updated: %Y-%m-%d %H:%M"
-msgstr "Naposledny aktualizované: %Y-%m-%d %H:%M"
+msgstr "Última modificação: %H:%M, %d-%m-%y"
 
 #: ../src/fsearch_window.c:827
 #, c-format
-msgid "Loading Database..."
-msgstr "Načítavanie databázy..."
+msgid "Loading Database…"
+msgstr "Carregando Base de Dados…"
 
 #: ../src/fsearch.c:339
 msgid "A search utility focusing on performance and advanced features"
-msgstr "Program na vyhľadávanie súborov zameraný na výkon a pokročilé funkcie"
+msgstr "Um utilitário de busca focado em performance e recursos avançados"
 
 #: ../src/fsearch_window_actions.c:138
 msgid "Do you really want to remove"
-msgstr "Naozaj chcete odstrániť"
+msgstr "Você realmente deseja remover"
 
 #: ../src/fsearch_window_actions.c:138
-#, fuzzy
 msgid "files?"
-msgstr "súborov?"
+msgstr "Arquivos?"
 
 #: ../src/fsearch_window_actions.c:142
 msgid "Deleting files..."
-msgstr "Vymazávanie súborov..."
+msgstr "Deletando arquivos…"
 
 #: ../src/fsearch_window_actions.c:142
-#, fuzzy
 msgid "Moving files to trash..."
-msgstr "Presúvanie súborov do koša..."
+msgstr "Movendo arquivos para a lixeira…"

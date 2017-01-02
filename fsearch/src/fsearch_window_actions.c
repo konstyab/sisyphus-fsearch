@@ -1,8 +1,30 @@
-#include <limits.h>
-#include <linux/limits.h>
+/*
+   FSearch - A fast file search utility
+   Copyright © 2016 Christian Boxdörfer
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, see <http://www.gnu.org/licenses/>.
+   */
+
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <gio/gdesktopappinfo.h>
+#include <glib/gi18n.h>
 
 #include "fsearch_window_actions.h"
+#include "fsearch_limits.h"
 #include "clipboard.h"
 #include "database_search.h"
 #include "utils.h"
@@ -110,13 +132,14 @@ fsearch_delete_selection (GSimpleAction *action,
     GtkTreeModel *model = NULL;
     GList *selected_rows = gtk_tree_selection_get_selected_rows (selection, &model);
     guint num_selected_rows = g_list_length (selected_rows);
-    if (num_selected_rows > 20) {
+
+    if (delete || num_selected_rows > 20) {
         char error_msg[PATH_MAX] = "";
-        snprintf (error_msg, sizeof (error_msg), "%s %d %s", "Do you really want to remove", num_selected_rows, "files?");
+        snprintf (error_msg, sizeof (error_msg), "%s %d %s", _("Do you really want to remove"), num_selected_rows, _("files?"));
         gint response = ui_utils_run_gtk_dialog (GTK_WIDGET (self),
                                                  GTK_MESSAGE_WARNING,
                                                  GTK_BUTTONS_OK_CANCEL,
-                                                 delete ? "Deleting files..." : "Moving files to trash...",
+                                                 delete ? _("Deleting files...") : _("Moving files to trash..."),
                                                  error_msg);
         if (response != GTK_RESPONSE_OK) {
             goto save_fail;
@@ -207,8 +230,8 @@ fsearch_window_action_invert_selection (GSimpleAction *action,
 
 static void
 fsearch_window_action_deselect_all (GSimpleAction *action,
-                                  GVariant      *variant,
-                                  gpointer       user_data)
+                                    GVariant      *variant,
+                                    gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     GtkTreeSelection *selection = fsearch_application_window_get_listview_selection (self);
@@ -350,9 +373,9 @@ fsearch_window_action_open (GSimpleAction *action,
 
 static void
 open_folder_cb (GtkTreeModel *model,
-         GtkTreePath *path,
-         GtkTreeIter *iter,
-         gpointer data)
+                GtkTreePath *path,
+                GtkTreeIter *iter,
+                gpointer data)
 {
     DatabaseSearchEntry *entry = (DatabaseSearchEntry *)iter->user_data;
     if (entry) {
@@ -365,8 +388,8 @@ open_folder_cb (GtkTreeModel *model,
 
 static void
 fsearch_window_action_open_folder (GSimpleAction *action,
-                            GVariant      *variant,
-                            gpointer       user_data)
+                                   GVariant      *variant,
+                                   gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     GtkTreeSelection *selection = fsearch_application_window_get_listview_selection (self);
@@ -433,8 +456,8 @@ fsearch_window_action_show_filter (GSimpleAction *action,
 
 static void
 fsearch_window_action_show_search_button (GSimpleAction *action,
-                                   GVariant      *variant,
-                                   gpointer       user_data)
+                                          GVariant      *variant,
+                                          gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     g_simple_action_set_state (action, variant);
@@ -446,8 +469,8 @@ fsearch_window_action_show_search_button (GSimpleAction *action,
 
 static void
 fsearch_window_action_show_statusbar (GSimpleAction *action,
-                                   GVariant      *variant,
-                                   gpointer       user_data)
+                                      GVariant      *variant,
+                                      gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     g_simple_action_set_state (action, variant);
@@ -459,8 +482,8 @@ fsearch_window_action_show_statusbar (GSimpleAction *action,
 
 static void
 fsearch_window_action_show_menubar (GSimpleAction *action,
-                                   GVariant      *variant,
-                                   gpointer       user_data)
+                                    GVariant      *variant,
+                                    gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     g_simple_action_set_state (action, variant);
@@ -472,8 +495,8 @@ fsearch_window_action_show_menubar (GSimpleAction *action,
 
 static void
 fsearch_window_action_search_in_path (GSimpleAction *action,
-                                   GVariant      *variant,
-                                   gpointer       user_data)
+                                      GVariant      *variant,
+                                      gpointer       user_data)
 {
     FsearchApplicationWindow *self = user_data;
     g_simple_action_set_state (action, variant);

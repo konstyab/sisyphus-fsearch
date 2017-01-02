@@ -64,7 +64,7 @@ echo -en "\\nru\\n" >> po/LINGUAS
 
 %changelog
 * Mon Jan 02 2017 Sample Maintainer <samplemaintainer@altlinux.org> git.2017.01.02.05.43-alt1
-- clone upstream git
+- clone git
 * Sat Dec 03 2016 Sample Maintainer <samplemaintainer@altlinux.org> git.2016.12.03.12.55-alt1
 - initial build
 

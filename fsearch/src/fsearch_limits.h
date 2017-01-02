@@ -17,19 +17,10 @@
    */
 
 #pragma once
-#include <unistd.h>
 
-const char *
-fsearch_strstr (const char *haystack,
-                const char *needle,
-                size_t needle_len);
+#include <limits.h>
 
-const char *
-fsearch_strcasestr (const char *haystack,
-                    const char *needle,
-                    size_t needle_len);
+#ifndef PATH_MAX
+#define	PATH_MAX 4096 /* max # of characters in a path name */
+#endif
 
-int
-fsearch_string_copy (char *dest,
-                     const char *src,
-                     int dest_len);
